@@ -31,7 +31,7 @@ const questions = [
   {
   type: "list",
   name: "experienceDeveloper",
-  message: "Are you experience developer",
+  message: "Are you an experience developer?",
   choices: ["Yes", "No"],
   validate: answer => {
   if (answer) {
@@ -74,7 +74,7 @@ const questions = [
   name: "salary",
   message: "What is your desired salary?",
   validate: answer => {
-  if (!answer < 1) {
+  if (answer) {
     return "Please enter the amount"
   } 
   return true;
